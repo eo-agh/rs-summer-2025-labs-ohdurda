@@ -1,0 +1,48 @@
+site_name: Remote Sensing and Image Analysis in Space Tech
+docs_dir: docs
+repo_url: https://github.com/eo-agh/eo-labs/
+
+copyright: Copyright 2025 AGH UST
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+nav:
+  - Introduction: introduction.md
+  - Semester projects: projects.md
+  - Labs:
+      - Lab 0: assets/labs/lab_0.md
+      - Lab 1: assets/labs/lab_1.md
+  - Lectures:
+      - Lecture 1: assets/lectures/lecture_1.md
+  - Contact: contact.md
